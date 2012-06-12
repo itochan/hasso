@@ -23,6 +23,9 @@ function main() {
       case "未発送":
         $(this).text("その発送はなかった");
         break;
+      case "出荷準備中":
+        $(this).text("その発送は今からする");
+        break;
       case "発送済み":
         $(this).text("その発送はもう済んだ");
         break;
