@@ -18,6 +18,13 @@ function load_jquery(callback) {
 }
 
 function main() {
+  $(".status > h2").each(function () {
+    switch ($(this).text()) {
+      case "未発送":
+        $(this).text("その発送はなかった");
+        break;
+    }
+  });
 }
 
 load_jquery(main);
