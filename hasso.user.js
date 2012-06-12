@@ -16,3 +16,8 @@ function load_jquery(callback) {
   }, false);
   document.body.appendChild(script);
 }
+
+function main() {
+}
+
+load_jquery(main);
